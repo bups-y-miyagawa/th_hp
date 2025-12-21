@@ -1,0 +1,251 @@
+/* サービス詳細ページ専用スタイル */
+
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+main.container {
+    padding: 4rem 2rem;
+}
+
+.service-detail {
+    margin-bottom: 4rem;
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+}
+
+.service-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.service-detail-icon {
+    font-size: 4rem;
+    flex-shrink: 0;
+}
+
+.service-detail-header h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.service-detail-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin: 0;
+}
+
+.service-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.service-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.service-description h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.service-description h3:first-child {
+    margin-top: 0;
+}
+
+.service-description p {
+    color: var(--text-gray);
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+
+.process-list,
+.item-list {
+    color: var(--text-gray);
+    line-height: 2;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.process-list li {
+    margin-bottom: 0.5rem;
+}
+
+.item-list li {
+    margin-bottom: 0.5rem;
+}
+
+.price-info {
+    background: linear-gradient(135deg, rgba(248, 181, 0, 0.1), rgba(217, 154, 0, 0.05));
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 2rem;
+}
+
+.price-info h3 {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.price-info p {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.price-note {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+/* CTAセクション */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cta-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-section .btn {
+    background: white;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.cta-section .btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+.cta-section .btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-section .btn-outline:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    main.container {
+        padding: 2rem 1rem;
+    }
+
+    .service-detail {
+        padding: 2rem 1.5rem;
+    }
+
+    .service-detail-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .service-detail-icon {
+        font-size: 3rem;
+    }
+
+    .service-detail-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-detail-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

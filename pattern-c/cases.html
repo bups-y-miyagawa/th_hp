@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実績・事例 | 株式会Thanks</title>
+    <link rel="stylesheet" href="css/corporate-styles.css">
+    <link rel="stylesheet" href="css/cases-styles.css">
+    <link rel="stylesheet" href="css/pattern-switcher.css">
+    <link rel="stylesheet" href="css/pattern-a.css" id="pattern-stylesheet">
+</head>
+<body>
+    <!-- パターン切り替えボタン -->
+    <div class="pattern-switcher">
+        <button class="pattern-switch-btn active" data-pattern="a" title="パターンA: 山吹色">A</button>
+        <button class="pattern-switch-btn" data-pattern="b" title="パターンB: ブルー">B</button>
+        <button class="pattern-switch-btn" data-pattern="c" title="パターンC: グリーン">C</button>
+    </div>
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <!-- モバイルナビゲーション -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="services.html">サービス</a></li>
+            <li><a href="about.html">会社情報</a></li>
+            <li><a href="cases.html" class="active">実績・事例</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">株式会Thanks</a>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="services.html">サービス</a></li>
+                    <li><a href="about.html">会社情報</a></li>
+                    <li><a href="cases.html">実績・事例</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ページタイトル -->
+    <section class="page-header">
+        <div class="container">
+            <h1>実績・事例</h1>
+            <p>お客様からいただいた信頼と実績</p>
+        </div>
+    </section>
+
+    <!-- 実績一覧 -->
+    <section class="cases-section">
+        <div class="container">
+            <div class="cases-grid">
+                <!-- 実績1 -->
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="../img/case-01.jpg" alt="遺品整理の実績">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-category">遺品整理</div>
+                        <h3>福岡市での遺品整理作業</h3>
+                        <p class="case-location">場所: 福岡市博多区</p>
+                        <p class="case-description">ご家族が残された遺品を丁寧に整理させていただきました。大切な思い出の品々を適切に分類し、必要な手続きもサポートいたしました。お客様からは「安心して任せられました」とのお言葉をいただきました。</p>
+                        <div class="case-details">
+                            <p><strong>作業内容:</strong> 遺品整理、清掃、処分</p>
+                            <p><strong>作業期間:</strong> 1日</p>
+                            <p><strong>作業面積:</strong> 2LDK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 実績2 -->
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="../img/case-02.jpg" alt="不用品回収の実績">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-category">不用品回収</div>
+                        <h3>引越し前の不用品回収</h3>
+                        <p class="case-location">場所: 北九州市小倉北区</p>
+                        <p class="case-description">引越し前に不要になった大型家具や家電を迅速に回収いたしました。お客様のご都合に合わせて作業日を調整し、スムーズに作業を完了させていただきました。</p>
+                        <div class="case-details">
+                            <p><strong>作業内容:</strong> 大型家具回収、家電回収</p>
+                            <p><strong>作業期間:</strong> 半日</p>
+                            <p><strong>回収量:</strong> 2tトラック1台分</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 実績3 -->
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="../img/case-03.jpg" alt="内部解体の実績">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-category">内部解体</div>
+                        <h3>リフォーム前の内装解体</h3>
+                        <p class="case-location">場所: 福岡市中央区</p>
+                        <p class="case-description">リフォーム工事の前準備として、内装解体を実施いたしました。壁紙、床材、天井材などを丁寧に撤去し、リフォーム工事の準備を整えました。</p>
+                        <div class="case-details">
+                            <p><strong>作業内容:</strong> 壁紙剥がし、床材撤去、天井材撤去</p>
+                            <p><strong>作業期間:</strong> 2日</p>
+                            <p><strong>作業面積:</strong> 3LDK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 実績4 -->
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="../img/case-04.jpg" alt="不用品買取の実績">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-category">不用品買取</div>
+                        <h3>ブランド品の高価買取</h3>
+                        <p class="case-location">場所: 福岡市南区</p>
+                        <p class="case-description">使わなくなったブランドバッグや時計を適正価格で買取させていただきました。状態の良いものは高価買取も可能です。お客様からは「思っていたより高く買い取ってもらえました」とのお言葉をいただきました。</p>
+                        <div class="case-details">
+                            <p><strong>作業内容:</strong> ブランド品査定、買取</p>
+                            <p><strong>買取品目:</strong> バッグ、時計、アクセサリー</p>
+                            <p><strong>買取金額:</strong> 50,000円</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 実績5 -->
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="../img/case-05.jpg" alt="特殊清掃の実績">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-category">特殊清掃</div>
+                        <h3>特殊清掃作業</h3>
+                        <p class="case-location">場所: 福岡市東区</p>
+                        <p class="case-description">専門的な知識と技術を持ったスタッフが、丁寧に特殊清掃作業を実施いたしました。お客様のご要望に合わせて、細部まで清掃を行い、清潔な環境を提供いたしました。</p>
+                        <div class="case-details">
+                            <p><strong>作業内容:</strong> 特殊清掃、消毒、消臭</p>
+                            <p><strong>作業期間:</strong> 1日</p>
+                            <p><strong>作業面積:</strong> 1LDK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 実績6 -->
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="../img/case-06.jpg" alt="草刈りの実績">
+                    </div>
+                    <div class="case-content">
+                        <div class="case-category">草刈り・伐採</div>
+                        <h3>庭の草刈り・メンテナンス</h3>
+                        <p class="case-location">場所: 遠賀郡遠賀町</p>
+                        <p class="case-description">お庭の草刈りと樹木の剪定を実施いたしました。定期的なメンテナンスも承っておりますので、美しいお庭を維持できます。</p>
+                        <div class="case-details">
+                            <p><strong>作業内容:</strong> 草刈り、樹木剪定、清掃</p>
+                            <p><strong>作業期間:</strong> 半日</p>
+                            <p><strong>作業面積:</strong> 約50㎡</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お客様の声 -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">お客様の声</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">💬</div>
+                    <p class="testimonial-text">「遺品整理を依頼しましたが、とても丁寧に作業していただき、安心して任せられました。必要な手続きもサポートしていただき、助かりました。」</p>
+                    <p class="testimonial-author">福岡市 60代 女性</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">💬</div>
+                    <p class="testimonial-text">「引越し前の不用品回収を依頼しました。迅速に対応していただき、スムーズに引越しができました。ありがとうございました。」</p>
+                    <p class="testimonial-author">北九州市 40代 男性</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">💬</div>
+                    <p class="testimonial-text">「リフォーム前の内装解体を依頼しました。丁寧に作業していただき、リフォーム工事もスムーズに進めることができました。」</p>
+                    <p class="testimonial-author">福岡市 50代 女性</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTAセクション -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">お気軽にご相談ください</h2>
+            <p class="cta-subtitle">無料見積もりも承っております。まずはお問い合わせください。</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn">お問い合わせ</a>
+                <a href="tel:092-123-4567" class="btn btn-outline">電話で相談</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>株式会Thanks</h3>
+                    <p>お客様の想いを大切に<br>最上級のサービスを低価格で</p>
+                </div>
+                <div class="footer-section">
+                    <h3>サービス</h3>
+                    <p><a href="services.html">遺品整理・生前整理</a></p>
+                    <p><a href="services.html">不用品買取・回収</a></p>
+                    <p><a href="services.html">解体工事</a></p>
+                    <p><a href="services.html">その他のサービス</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>会社情報</h3>
+                    <p><a href="about.html">会社概要</a></p>
+                    <p><a href="about.html">代表メッセージ</a></p>
+                    <p><a href="about.html">資格・許可証</a></p>
+                    <p><a href="cases.html">実績・事例</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <p>電話: 092-123-4567</p>
+                    <p>メール: info@thanks-corp.jp</p>
+                    <p>営業時間: 9:00〜18:00</p>
+                    <p>定休日: 日曜日</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-<span id="copyright-year">2025</span> 株式会Thanks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileNav');
+            const hamburger = document.querySelector('.hamburger-menu');
+            const overlay = document.querySelector('.overlay');
+            
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+    </script>
+    <script src="js/pattern-switcher.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>
+

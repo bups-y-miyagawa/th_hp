@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | 株式会社Thanks</title>
+    <link rel="stylesheet" href="css/corporate-styles.css">
+    <link rel="stylesheet" href="css/contact-styles.css">
+    <link rel="stylesheet" href="css/pattern-switcher.css">
+    <link rel="stylesheet" href="css/pattern-a.css" id="pattern-stylesheet">
+</head>
+<body>
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <!-- モバイルナビゲーション -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">会社情報</a></li>
+            <li><a href="cases.html">実績・事例</a></li>
+            <li><a href="contact.html" class="active">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">株式会社Thanks</a>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">会社情報</a></li>
+                    <li><a href="cases.html">実績・事例</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ページタイトル -->
+    <section class="page-header">
+        <div class="container">
+            <h1>お問い合わせ</h1>
+            <p>お気軽にご相談ください</p>
+        </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <h2>お問い合わせフォーム</h2>
+                    <p class="form-description">以下のフォームにご記入の上、送信してください。無料見積もりも承っております。</p>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">必須</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">必須</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">電話番号 <span class="required">必須</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">ご希望のサービス</label>
+                            <select id="service" name="service">
+                                <option value="">選択してください</option>
+                                <option value="estate">遺品整理・生前整理</option>
+                                <option value="buy">不用品買取</option>
+                                <option value="collection">不用品回収</option>
+                                <option value="demolition">内部解体</option>
+                                <option value="tombstone">墓石解体</option>
+                                <option value="garden">草刈り・伐採</option>
+                                <option value="cleaning">清掃・特殊清掃</option>
+                                <option value="waste">産業廃棄物収集運搬</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="area">ご希望のエリア</label>
+                            <select id="area" name="area">
+                                <option value="">選択してください</option>
+                                <option value="fukuoka">福岡市</option>
+                                <option value="kitakyushu">北九州市</option>
+                                <option value="onga">遠賀郡</option>
+                                <option value="other">その他福岡県内</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span>プライバシーポリシーに同意する <span class="required">必須</span></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">送信する</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <h2>連絡先情報</h2>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3>電話</h3>
+                                <p><a href="tel:092-123-4567">092-123-4567</a></p>
+                                <p class="contact-note">受付時間: 9:00〜18:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h3>メール</h3>
+                                <p><a href="mailto:info@thanks-corp.jp">info@thanks-corp.jp</a></p>
+                                <p class="contact-note">24時間受付</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>所在地</h3>
+                                <p>〒811-4302<br>福岡県遠賀郡遠賀町遠賀川3-5-6</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <h3>営業時間</h3>
+                                <p>平日: 9:00〜18:00<br>土曜: 9:00〜17:00</p>
+                                <p class="contact-note">定休日: 日曜日</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area-card">
+                        <h2>対応エリア</h2>
+                        <p class="area-main">福岡県内</p>
+                        <ul class="area-list">
+                            <li>福岡市</li>
+                            <li>北九州市</li>
+                            <li>久留米市</li>
+                            <li>大牟田市</li>
+                            <li>直方市</li>
+                            <li>飯塚市</li>
+                            <li>田川市</li>
+                            <li>中間市</li>
+                            <li>小郡市</li>
+                            <li>筑紫野市</li>
+                            <li>大野城市</li>
+                            <li>宗像市</li>
+                            <li>太宰府市</li>
+                            <li>古賀市</li>
+                            <li>福津市</li>
+                            <li>うきは市</li>
+                            <li>宮若市</li>
+                            <li>嘉麻市</li>
+                            <li>朝倉市</li>
+                            <li>みやま市</li>
+                            <li>糸島市</li>
+                            <li>那珂川市</li>
+                            <li>遠賀郡</li>
+                            <li>その他福岡県内全域</li>
+                        </ul>
+                        <p class="area-note">※ エリアにより追加料金が発生する場合がございます。詳細はお問い合わせください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>株式会社Thanks</h3>
+                    <p>お客様の想いを大切に<br>最上級のサービスを低価格で</p>
+                </div>
+                <div class="footer-section">
+                    <h3>サービス</h3>
+                    <p><a href="service-estate.html">遺品整理・生前整理</a></p>
+                    <p><a href="service-buy.html">不用品買取</a></p>
+                    <p><a href="service-collection.html">不用品回収</a></p>
+                    <p><a href="service-demolition.html">内部解体</a></p>
+                    <p><a href="service-tombstone.html">墓石解体</a></p>
+                    <p><a href="service-garden.html">草刈り・伐採</a></p>
+                    <p><a href="service-cleaning.html">清掃・特殊清掃</a></p>
+                    <p><a href="service-waste.html">産業廃棄物収集運搬</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>会社情報</h3>
+                    <p><a href="about.html">会社概要</a></p>
+                    <p><a href="about.html">代表メッセージ</a></p>
+                    <p><a href="about.html">資格・許可証</a></p>
+                    <p><a href="cases.html">実績・事例</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <p>電話: 092-123-4567</p>
+                    <p>メール: info@thanks-corp.jp</p>
+                    <p>営業時間: 9:00〜18:00</p>
+                    <p>定休日: 日曜日</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022-<span id="copyright-year">2025</span> 株式会社Thanks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileNav');
+            const hamburger = document.querySelector('.hamburger-menu');
+            const overlay = document.querySelector('.overlay');
+            
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+    </script>
+    <script src="js/pattern-switcher.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>
+
